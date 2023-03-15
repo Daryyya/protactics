@@ -9,6 +9,10 @@
     "plugin:react/recommended",
     "next/core-web-vitals"
   ],
+  "rules": {
+    "react/function-component-definition": "off",
+    "arrow-body-style": "off"
+  },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
@@ -18,17 +22,16 @@
         "sourceType": "module"
       },
       "extends": [
-        "eslint:recommended",
-        "airbnb",
         "airbnb-typescript",
-        "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "airbnb-typescript"
       ],
       "plugins": ["@typescript-eslint"],
       "rules": {
+        "quotes": ["error", "double"],
         "react/react-in-jsx-scope": "off",
-        "react/jsx-props-no-spreading": "off"
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/quotes": "off"
       }
     }
   ]
