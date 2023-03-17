@@ -1,0 +1,54 @@
+.contact {
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: var(--light-grey);
+  padding: 9px;
+
+  &__link {
+    color: var(--black);
+    text-transform: uppercase;
+    margin-right: 10px;
+    padding: 10px;
+    transition: 0.3s;
+
+    &:hover {
+      text-decoration: underline solid var(--black) 2px;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+
+    &:focus-visible {
+      text-decoration: underline solid var(--black) 2px;
+    }
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 10px;
+    padding: 10px 20px;
+  }
+
+  @media (max-width: 992px) {
+    margin-left: auto;
+    margin-right: 59px;
+  }
+  &_mobile {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    margin-left: 0;
+    @media (min-width: 576px) {
+      display: none;
+    }
+  }
+  &_desktop {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+}

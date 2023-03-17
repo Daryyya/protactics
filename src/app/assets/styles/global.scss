@@ -8,6 +8,10 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 70px;
+
+	@media (max-width: 1200px) {
+		padding: 0 30px;
+	}
 }
 
 /* Reset and base styles  */

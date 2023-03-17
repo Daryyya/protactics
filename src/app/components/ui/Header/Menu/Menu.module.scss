@@ -1,0 +1,21 @@
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 34px;
+
+  li {
+    font-weight: 500;
+    color: var(--black);
+
+    a:hover, a:focus-visible{                         
+      text-decoration: underline solid var(--black) 1px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    grid-auto-flow: row;
+  }
+}

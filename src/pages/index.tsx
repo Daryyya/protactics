@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Layout>
       <Container>
-        <Card className={s.mainBlock}>
+        <Card className={s.main_block}>
           <div>
             <p className={s.subtitle}>все предложения</p>
             <h1 className={s.title}>Корпоративные системы</h1>
@@ -34,17 +34,20 @@ export default function Home() {
         <CardLink
           text="Следите за нашими новостями"
           title="Перейти к новостям"
-          className={s.newsCard}
+          className={s.news_card}
+          link="news"
         />
         <CardLink
           text="Вгляните на наши достижения"
           title="Награды"
-          className={s.awardCard}
+          className={s.awards_card}
+          link="awards"
         />
         <CardLink
           text="Хотите заказать прямо сейчас?"
           title="Оформить"
-          className={s.formCard}
+          className={s.form_card}
+          link="form"
         />
       </Container>
     </Layout>
