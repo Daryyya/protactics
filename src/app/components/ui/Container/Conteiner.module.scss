@@ -1,0 +1,12 @@
+.gridWrap {
+    padding-top: 30px;
+    padding-bottom: 69px;
+    display: grid;
+    gap: 20px;
+    flex: 1;
+
+    grid-template-areas: 
+    "A B B"
+    "A C D"
+    "A C D";
+}

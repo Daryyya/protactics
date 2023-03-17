@@ -1,0 +1,75 @@
+.mainBlock {
+  padding: 40px 30px;
+  background-color: var(--black);
+  grid-area: A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--extralight-grey);
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 70px;
+  color: var(--white);
+}
+
+.link {
+  max-width: 346px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  background-color: var(--white);
+  padding: 0px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    display: block;
+    text-align: center;
+    padding: 10px 30px;
+    border-right: 1px solid var(--extralight-grey);
+  }
+
+  &__subtitle {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--extralight-grey);
+  }
+
+  &__img_wrap {
+    flex: 1 0 auto;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.newsCard {
+  background-color: var(--mid-grey);
+  padding: 20px 26px;
+  grid-area: B;
+}
+
+.awardCard {
+  color: var(--white);
+  background-color: var(--purple);
+  padding: 18px;
+  grid-area: C;
+}
+
+.formCard {
+  background-color: var(--green);
+  padding: 18px;
+  grid-area: D;
+}
