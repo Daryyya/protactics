@@ -7,8 +7,13 @@
     font-weight: 500;
     color: var(--black);
 
-    a:hover, a:focus-visible{                         
+    a:hover,
+    a:focus-visible {
       text-decoration: underline solid var(--black) 1px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 19px;
     }
   }
 

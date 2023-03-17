@@ -17,7 +17,7 @@ const CardLink: FC<Props> = ({
   text, title, className, link,
 }) => {
   return (
-    <Card className={clsx(className, s.card)}>
+    <Card className={clsx(s.card, className)}>
       <p>{text}</p>
       <h2>{title}</h2>
       <Link href={`/${link}`}>

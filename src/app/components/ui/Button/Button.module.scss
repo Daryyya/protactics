@@ -1,16 +1,16 @@
 .button {
-    transition: 0.3s;
+  transition: 0.3s;
 
-    &:hover {
-        opacity: 0.9;
-    }
+  &:hover {
+    opacity: 0.9;
+  }
 
-    &:active {
-        transform: scale(0.95);
-    }
+  &:active {
+    transform: scale(0.95);
+  }
 
-    &:focus-visible {
-        opacity: 0.9;
-        box-shadow: 4px 4px 8px 0px var(--grey);
-    }
+  &:focus-visible {
+    opacity: 0.9;
+    box-shadow: 4px 4px 8px 0px var(--grey);
+  }
 }
