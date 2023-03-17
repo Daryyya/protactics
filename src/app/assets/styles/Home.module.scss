@@ -1,4 +1,4 @@
-.mainBlock {
+.main_block {
   padding: 40px 30px;
   background-color: var(--black);
   grid-area: A;
@@ -14,12 +14,24 @@
   color: var(--extralight-grey);
   text-transform: uppercase;
   margin-bottom: 7px;
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .title {
   font-size: 64px;
   line-height: 70px;
   color: var(--white);
+
+  @media (max-width: 1200px) {
+    font-size: 45px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .link {
@@ -53,22 +65,30 @@
     display: grid;
     place-items: center;
   }
+
+  &:hover,   &:focus-visible{
+    opacity: 0.9;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
-.newsCard {
+.news_card {
   background-color: var(--mid-grey);
   padding: 20px 26px;
   grid-area: B;
 }
 
-.awardCard {
+.awards_card {
   color: var(--white);
   background-color: var(--purple);
   padding: 18px;
   grid-area: C;
 }
 
-.formCard {
+.form_card {
   background-color: var(--green);
   padding: 18px;
   grid-area: D;

@@ -1,4 +1,4 @@
-.gridWrap {
+.grid_wrap {
     padding-top: 30px;
     padding-bottom: 69px;
     display: grid;
@@ -9,4 +9,18 @@
     "A B B"
     "A C D"
     "A C D";
+
+    @media (max-width: 992px) {
+        grid-template-areas: 
+        "A A"
+        "B B"
+        "C D";
+    }
+    @media (max-width: 576px) {
+        grid-template-areas: 
+        "A"
+        "B"
+        "C"
+        "D";
+    }
 }

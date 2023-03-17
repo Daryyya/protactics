@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Container: FC<Props> = ({ children }) => {
-  return <div className={clsx("container", s.gridWrap)}>{children}</div>;
+  return <div className={clsx("container", s.grid_wrap)}>{children}</div>;
 };
 
 export default Container;

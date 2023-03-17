@@ -6,6 +6,10 @@
   li {
     font-weight: 500;
     color: var(--black);
+
+    a:hover, a:focus-visible{                         
+      text-decoration: underline solid var(--black) 1px;
+    }
   }
 
   @media (max-width: 1200px) {
