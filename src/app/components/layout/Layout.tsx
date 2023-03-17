@@ -1,6 +1,7 @@
 import React, { FC, ReactNode } from "react";
 import { Manrope } from "next/font/google";
 import Header from "../ui/Header/Header";
+import s from "./Layout.module.scss";
 
 const font = Manrope({
   variable: "--main-font",
@@ -16,9 +17,7 @@ const Layout: FC<Props> = ({ children }) => {
   return (
     <div className={font.className}>
       <Header />
-      <main>
-        {children}
-      </main>
+      <main className={s.main}>{children}</main>
     </div>
   );
 };
