@@ -1,0 +1,10 @@
+.gridWrap {
+    padding: 30px 0;
+    display: grid;
+    gap: 20px;
+
+    grid-template-areas: 
+    "A A A A B B B B"
+    "A A A A C C D D"
+    "A A A A C C D D ";
+}

@@ -1,0 +1,108 @@
+.mainBlock {
+    padding: 40px 30px;
+    background-color: var(--black);
+    grid-area: A;
+
+    &__btn {
+        background-color: var(--white);
+        padding: 10px 23px 10px 39px;
+        border-radius: 15px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 30px;
+        color: var(--extralight-grey);
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 70px;
+        color: var(--white);
+    }
+}
+
+.newsBlock {
+    position: relative;
+    font-weight: 700;
+    background-color: var(--mid-grey);
+    padding: 20px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: B;
+
+    p {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 44px;
+        line-height: 60px;
+    }
+
+    a {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
+
+.awardBlock {
+    position: relative;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--purple);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: C;
+
+    p {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    h2 {
+        font-size: 44px;
+        line-height: 60px;
+    }
+
+    a {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+}
+
+.formBlock {
+    position: relative;
+    font-weight: 700;
+    background-color: var(--green);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: D;
+
+    p {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    h2 {
+        font-size: 44px;
+        line-height: 60px;
+    }
+
+    a {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+}
