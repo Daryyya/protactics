@@ -1,29 +1,18 @@
 .header {
   font-size: 17px;
   line-height: 1.35;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-  }
-
-  &__menu {
-    display: flex;
-
-    li {
-      font-weight: 500;
-      color: var(--black);
-    }
-
-    li:not(:last-child) {
-      margin-right: 34px;
-    }
+  @media (max-width: 576px) {
+    font-size: 14px;
   }
 }
 
-.logoWrap {
+.logo_wrap {
   display: grid;
   place-items: center;
   margin-right: 42px;
@@ -31,43 +20,21 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-}
 
-.menuWrap {
-  margin-right: auto;
-}
-
-.contact {
-  font-weight: 700;
-  border-radius: 10px;
-  background-color: var(--light-grey);
-  padding: 9px;
-
-  &__link {
-    color: var(--black);
-    text-transform: uppercase;
-    margin-right: 10px;
-    padding: 10px;
-    transition: 0.3s;
-
-    &:hover {
-      text-decoration: underline solid var(--black) 2px;
-    }
-
-    &:active {
-      opacity: 0.8;
-    }
-
-    &:focus-visible {
-      text-decoration: underline solid var(--black) 2px;
-    }
+  @media (max-width: 1200px) {
+    margin-right: 20px;
   }
+}
 
-  &__btn {
-    text-transform: uppercase;
-    color: var(--white);
-    background-color: var(--black);
-    border-radius: 10px;
-    padding: 10px 20px;
+.menu_desktop {
+  margin-right: auto;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+.menu_mobile {
+  @media (min-width: 992px) {
+    display: none;
   }
 }

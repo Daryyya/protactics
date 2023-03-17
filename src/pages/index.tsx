@@ -35,16 +35,19 @@ export default function Home() {
           text="Следите за нашими новостями"
           title="Перейти к новостям"
           className={s.newsCard}
+          link="news"
         />
         <CardLink
           text="Вгляните на наши достижения"
           title="Награды"
           className={s.awardCard}
+          link="awards"
         />
         <CardLink
           text="Хотите заказать прямо сейчас?"
           title="Оформить"
           className={s.formCard}
+          link="form"
         />
       </Container>
     </Layout>
