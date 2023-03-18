@@ -18,9 +18,10 @@ export default function Home() {
           </div>
           <Link
             className={s.link}
-            href="assets/files/test.pdf"
+            href="/files/test.pdf"
             download="test.pdf"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <span className={s.link__text}>
               <span className={s.link__subtitle}>Создание проекта</span>
